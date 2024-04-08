@@ -1,47 +1,12 @@
-# Homeassistant E3DC Integration - Git Version
+# Homeassistant E3DC S10 - Git Version
 
 [![hacs][hacs-shield]][hacs]
 [![GitHub Release][releases-shield]][releases]
 [![GitHub Prerelease][prereleases-shield]][releases]
 
-![Project Maintenance][maintainer]
-[![GitHub Activity][commits-shield]][commits]
-[![License][license-shield]](LICENSE)
-
-<!-- [![BuyMeCoffee][buymecoffeebadge]][buymecoffee] -->
-<!-- [![Discord][discord-shield]][discord] -->
-[![Community Forum][forum-shield]][forum]
-
 This integration will interface with the E3DC Storage systems supprting the RCSP
 protocol. It is based on [python-e3dc](https://github.com/fsantini/python-e3dc).
-This repository delivers the latest features via HACS. You can use it for
-testing until I can get the integration accepted to HA core (no timeline for
-that, sorry).
 
-If you encounter problems, please file an issue at the integrations issue
-tracker. If possible, add a diagnostics dump always. This is important also for
-enhancements if they target new data or information to be retrieved from the
-unit to see what it has to offer. Always check that dump if you want to further
-redact information in it. The MACs and the units serial number are redacted
-already, but check for yourself! If you find information in the dump that you
-consider private, please file a bug request so that I can update the anonymizing
-code.
-
-- [Disclaimer](#disclaimer)
-- [Installation](#installation)
-  - [HACS Installation](#hacs-installation)
-  - [Manual Installation](#manual-installation)
-- [Configuration](#configuration)
-  - [RSCP configuration](#rscp-configuration)
-  - [Probable causes of connection problems](#probable-causes-of-connection-problems)
-    - [Password limitations](#password-limitations)
-    - [Network restriction](#network-restriction)
-  - [Unsupported features configuration schemes](#unsupported-features-configuration-schemes)
-- [Services](#services)
-  - [Set power limits](#set-power-limits)
-  - [Clear current power limits](#clear-current-power-limits)
-  - [Initate manual battery charging](#initate-manual-battery-charging)
-- [Upstream source](#upstream-source)
 
 ## Disclaimer
 
@@ -212,25 +177,5 @@ To stress this once more: Use this feature at your own risk.
 
 The extension is based on [Python E3DC
 library](https://github.com/fsantini/python-e3dc) from @fsantini. The general considerations mentioned in his project do apply to this integration.
-
-***
-
-<!--
-[buymecoffee]: https://www.buymeacoffee.com/ludeeus
-[buymecoffeebadge]: https://img.shields.io/badge/buy%20me%20a%20coffee-donate-yellow.svg?style=for-the-badge
--->
-[commits-shield]: https://img.shields.io/github/commit-activity/y/torbennehmer/hacs-e3dc?style=for-the-badge&logo=git
-[commits]: https://github.com/torbennehmer/hacs-e3dc/commits/main
-<!--
-[discord]: https://discord.gg/Qa5fW2R
-[discord-shield]: https://img.shields.io/discord/330944238910963714.svg?style=for-the-badge
--->
-[forum-shield]: https://img.shields.io/badge/Community%20Forum-Home%20Assistant-blue?style=for-the-badge&logo=homeassistant
-[forum]: https://community.home-assistant.io/t/e3dc-remote-storage-control-protocol-rscp/595280
-[hacs]: https://github.com/hacs/integration
-[hacs-shield]: https://img.shields.io/badge/HACS-Custom-41BDF5.svg?style=for-the-badge&logo=homeassistantcommunitystore
-[license-shield]: https://img.shields.io/github/license/torbennehmer/hacs-e3dc?style=for-the-badge&color=blue&logo=gnu
-[maintainer]: https://img.shields.io/badge/Maintainer-Torben%20Nehmer-blue?style=for-the-badge&logo=github
-[prereleases-shield]: https://img.shields.io/github/v/release/torbennehmer/hacs-e3dc?include_prereleases&style=for-the-badge&logo=git
 [releases-shield]: https://img.shields.io/github/v/release/torbennehmer/hacs-e3dc?style=for-the-badge&logo=homeassistantcommunitystore
 [releases]: https://github.com/torbennehmer/hacs-e3dc/releases
