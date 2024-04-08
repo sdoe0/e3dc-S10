@@ -1,9 +1,5 @@
 # Homeassistant E3DC S10 - Git Version
 
-[![hacs][hacs-shield]][hacs]
-[![GitHub Release][releases-shield]][releases]
-[![GitHub Prerelease][prereleases-shield]][releases]
-
 This integration will interface with the E3DC Storage systems supprting the RCSP
 protocol. It is based on [python-e3dc](https://github.com/fsantini/python-e3dc).
 
