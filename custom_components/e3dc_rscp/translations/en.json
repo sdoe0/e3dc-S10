@@ -1,0 +1,251 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured",
+            "reauth_successful": "Re-authentication was successful"
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "invalid_auth": "Invalid authentication"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "host": "Host",
+                    "password": "Password",
+                    "rscpkey": "RSCP encryption key",
+                    "username": "Username"
+                },
+                "title": "Updating E3DC credentials"
+            },
+            "user": {
+                "data": {
+                    "host": "Host",
+                    "password": "Password",
+                    "rscpkey": "RSCP encryption key",
+                    "username": "Username"
+                }
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "system-additional-source-available": {
+                "name": "Additional source"
+            },
+            "pset-limit-enabled": {
+                "name": "Power limits"
+            },
+            "manual-charge-active": {
+                "name": "Manual charge"
+            }
+        },
+        "sensor": {
+            "system-derate-percent": {
+                "name": "Derate feed above %"
+            },
+            "system-derate-power": {
+                "name": "Derate feed above W"
+            },
+            "system-battery-installed-capacity": {
+                "name": "Installed battery capacity"
+            },
+            "system-battery-installed-peak": {
+                "name": "Installed peak power"
+            },
+            "system-ac-maxpower": {
+                "name": "Maximum AC power"
+            },
+            "system-battery-charge-max": {
+                "name": "System maximum charge"
+            },
+            "system-battery-discharge-max": {
+                "name": "System maximum discharge"
+            },
+            "system-mac": {
+                "name": "MAC address"
+            },
+            "system-battery-discharge-minimum-default": {
+                "name": "System minimum discharge"
+            },
+            "autarky": {
+                "name": "Autarky"
+            },
+            "battery-charge": {
+                "name": "Battery charge"
+            },
+            "battery-netchange": {
+                "name": "Battery net change"
+            },
+            "grid-consumption": {
+                "name": "Consumption from grid"
+            },
+            "house-consumption": {
+                "name": "House consumption"
+            },
+            "wallbox-consumption": {
+                "name": "Wallbox consumption"
+            },
+            "grid-netchange": {
+                "name": "Transfer to/from grid"
+            },
+            "battery-discharge": {
+                "name": "Battery discharge"
+            },
+            "grid-production": {
+                "name": "Export to grid"
+            },
+            "solar-production": {
+                "name": "Solar production"
+            },
+            "pset-limit-charge": {
+                "name": "Maximum charge"
+            },
+            "pset-limit-discharge": {
+                "name": "Maximum discharge"
+            },
+            "pset-limit-discharge-minimum": {
+                "name": "Minimum required discharge"
+            },
+            "selfconsumption": {
+                "name": "Self consumption"
+            },
+            "soc": {
+                "name": "State of charge"
+            },
+            "db-day-autarky": {
+                "name": "Autarky - today"
+            },
+            "db-day-battery-charge": {
+                "name": "Battery charge - today"
+            },
+            "db-day-battery-discharge": {
+                "name": "Battery discharge - today"
+            },
+            "db-day-grid-consumption": {
+                "name": "Consumption from grid - today"
+            },
+            "db-day-house-consumption": {
+                "name": "House consumption - today"
+            },
+            "db-day-grid-production": {
+                "name": "Export to grid - today"
+            },
+            "db-day-solar-production": {
+                "name": "Solar production - today"
+            },
+            "db-day-selfconsumption": {
+                "name": "Self consumption - today"
+            },
+            "manual-charge-energy": {
+                "name": "Energy charged from grid"
+            },
+            "undefined": {
+                "name": "Undefined Powermeter"
+            },
+            "root-pm": {
+                "name": "Root Powermeter"
+            },
+            "additional": {
+                "name": "Additional powermeter"
+            },
+            "additional-production": {
+                "name": "Additional production"
+            },
+            "additional-consumption": {
+                "name": "Additional consumption"
+            },
+            "farm": {
+                "name": "Farm"
+            },
+            "unused": {
+                "name": "Unused powermeter"
+            },
+            "wallbox": {
+                "name": "Wallbox"
+            },
+            "farm-additional": {
+                "name": "Farm additional powermeter"
+            },
+            "undefined-total": {
+                "name": "Undefined Powermeter - total"
+            },
+            "root-pm-total": {
+                "name": "Root Powermeter - total"
+            },
+            "additional-total": {
+                "name": "Additional Powermeter - total"
+            },
+            "additional-production-total": {
+                "name": "Additional production - total"
+            },
+            "additional-consumption-total": {
+                "name": "Additional consumption - total"
+            },
+            "farm-total": {
+                "name": "Farm - total"
+            },
+            "unused-total": {
+                "name": "Unused powermeter - total"
+            },
+            "wallbox-total": {
+                "name": "Wallbox - total"
+            },
+            "farm-additional-total": {
+                "name": "Farm additional powermeter - total"
+            }
+        },
+        "switch": {
+            "pset-weatherregulationenabled": {
+                "name": "Weather regulation"
+            },
+            "pset-powersaving-enabled": {
+                "name": "SmartPower powersaving"
+            }
+        }
+    },
+    "services": {
+        "clear_power_limits": {
+            "name": "Clear power limits",
+            "description": "Clears any active power limit of the E3DC unit.",
+            "fields": {
+                "device_id": {
+                    "name": "E3DC Device ID",
+                    "description": "E3DC Device ID, take it either from the YAML-Mode on the website of out of the URL of the device configuration page."
+                }
+            }
+        },
+        "set_power_limits": {
+            "name": "Set power limits",
+            "description": "Sets the maximum charge/discharge limits of the E3DC unit.",
+            "fields": {
+                "device_id": {
+                    "name": "E3DC Device ID",
+                    "description": "E3DC Device ID, take it either from the YAML-Mode on the website of out of the URL of the device configuration page."
+                },
+                "max_charge": {
+                    "name": "Maximum Charge (W)",
+                    "description": "Maximum allowed battery charge in Watts."
+                },
+                "max_discharge": {
+                    "name": "Maximum Discharge (W)",
+                    "description": "Maximum allowed battery discharge in Watts."
+                }
+            }
+        },
+        "manual_charge": {
+            "name": "Control manual charging",
+            "description": "Starts or stops manual charging, set charge amount to zero to stop charging if it is running. Use this feature at your own risk. Take conversion losses, battery wear local laws/regulations and the E3DC warranty in mind when using this service. There is a rate limit on this call (once every few hours).",
+            "fields": {
+                "device_id": {
+                    "name": "E3DC Device ID",
+                    "description": "E3DC Device ID, take it either from the YAML-Mode on the website of out of the URL of the device configuration page."
+                },
+                "charge_amount": {
+                    "name": "Charge amount (Wh)",
+                    "description": "Amount to charge in Wh."
+                }
+            }
+        }
+    }
+}

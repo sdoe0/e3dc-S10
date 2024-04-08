@@ -1,0 +1,57 @@
+clear_power_limits:
+  fields:
+    device_id:
+      required: true
+      example: "64d3b74a1bcf319288844ff9e93e4010"
+      selector:
+        device:
+          filter:
+            integration: e3dc_rscp
+
+set_power_limits:
+  fields:
+    device_id:
+      required: true
+      example: "64d3b74a1bcf319288844ff9e93e4010"
+      selector:
+        device:
+          filter:
+            integration: e3dc_rscp
+    max_charge:
+      required: false
+      example: "1000"
+      selector:
+        number:
+          min: 0
+          unit_of_measurement: W
+          mode: box
+          step: 100
+    max_discharge:
+      required: false
+      example: "1000"
+      selector:
+        number:
+          min: 0
+          unit_of_measurement: W
+          mode: box
+          step: 100
+
+
+manual_charge:
+  fields:
+    device_id:
+      required: true
+      example: "64d3b74a1bcf319288844ff9e93e4010"
+      selector:
+        device:
+          filter:
+            integration: e3dc_rscp
+    charge_amount:
+      required: true
+      example: "1000"
+      selector:
+        number:
+          min: 0
+          unit_of_measurement: Wh
+          mode: box
+          step: 100
