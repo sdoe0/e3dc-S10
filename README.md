@@ -173,5 +173,3 @@ To stress this once more: Use this feature at your own risk.
 
 The extension is based on [Python E3DC
 library](https://github.com/fsantini/python-e3dc) from @fsantini. The general considerations mentioned in his project do apply to this integration.
-[releases-shield]: https://img.shields.io/github/v/release/torbennehmer/hacs-e3dc?style=for-the-badge&logo=homeassistantcommunitystore
-[releases]: https://github.com/torbennehmer/hacs-e3dc/releases
